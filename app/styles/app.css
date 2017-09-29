@@ -1,0 +1,62 @@
+.side {
+  background-color: lightblue;
+  height: 500px;
+  margin-right: 10px;
+}
+
+.col-md-9 {
+  background-color: lightblue;
+  height: 500px;
+  margin-right: 10px;
+}
+
+.jumbotron {
+  background-color: lightblue;
+}
+
+.list-group {
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.each {
+  margin-bottom: 10px;
+  background-color: white;
+  height: 150px;
+}
+
+.pro {
+  height: 150px;
+  width: auto;
+}
+
+.img {
+  margin: auto;
+  ;
+}
+
+.card {
+  height: inherit;
+  text-align: center;
+}
+
+.content {
+  background-color: pink;
+}
+
+.comments {
+  margin: 10px;
+  padding: 10px;
+  background-color: pink;
+}
+
+.btn {
+  margin: 10px;
+}

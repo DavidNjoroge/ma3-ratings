@@ -1,0 +1,20 @@
+{
+  "name": "ma3-ratings",
+  "description": "Small description for ma3-ratings goes here",
+  "main": "",
+  "authors": [
+    "njorogedavid13@gmail.com <njorogedavid13@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
