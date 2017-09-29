@@ -1,0 +1,23 @@
+{{#if addComment}}
+<div class="comments">
+  <form>
+    <div class="form-group">
+      {{input value=content class="form-control" id="formGroupExampleInput2" placeholder="comment"}}
+    </div>
+    <div class="row">
+      <div class="col-6">
+        {{input value=author class="form-control" placeholder="author"}}
+      </div>
+      <div class="col-4">
+        {{input value=rating type="number" class="form-control" placeholder="rating"}}
+      </div>
+          <div class="col-2">
+    <p>  <button {{action 'saveComment'}} type="submit" name="button" class="btn">submit</button> <button {{action 'cancel'}} type="submit" name="button" class="btn">cancel</button> </p>
+    </div>
+  </div>
+  </form>
+</div>
+{{else}}
+<button {{action 'commentFormShow'}} type="button" name="button" class="btn btn-primary">New Comment</button>
+
+{{/if}}
