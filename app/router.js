@@ -7,6 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('matatu', {
+    path: '/matatu/:matatu_id'
+  });
 });
 
 export default Router;

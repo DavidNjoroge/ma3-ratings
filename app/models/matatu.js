@@ -5,6 +5,6 @@ export default DS.Model.extend({
   sacco: DS.attr(),
   image: DS.attr(),
   plate: DS.attr(),
-  Route: DS.attr()
+  route: DS.attr()
 
 });

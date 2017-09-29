@@ -7,11 +7,11 @@
     <div class="col-md-8">
       <div class="card">
         <div class="card-header">
-          <p><strong>{{matatu.name}}</strong></p>
+          <p><strong>{{#link-to 'matatu' matatu.id}}{{matatu.name}}{{/link-to}}</strong></p>
         </div>
         <div class="card-body">
           <p>{{matatu.route}}</p>
-          <p>Average rating:{{matatu.rating}}</p>
+          <p>Average rating: 9.1</p>
 
         </div>
       </div>
