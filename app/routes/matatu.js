@@ -6,8 +6,12 @@ export default Ember.Route.extend({
   },
   saveComment3(params) {
     var newComment = this.store.createRecord('comment', params)
-    // newComment.save()
+    var matatu = params.matatu;
+    matatu.get('comments').addToObject(newComment).then(function() {
+      debugger
+      return newComment.save()
+    })
     alert('the comment action is reaching the route')
-    this.transitionTo('matatu')
+    this.transitionTo('matatu', matatu)
   }
 });

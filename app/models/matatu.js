@@ -5,6 +5,9 @@ export default DS.Model.extend({
   sacco: DS.attr(),
   image: DS.attr(),
   plate: DS.attr(),
-  route: DS.attr()
+  route: DS.attr(),
+  comments: DS.hasMany('comment', {
+    async: true
+  })
 
 });

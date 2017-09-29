@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('matatu', {
     path: '/matatu/:matatu_id'
   });
+  this.route('new');
 });
 
 export default Router;
