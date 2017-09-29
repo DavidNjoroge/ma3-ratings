@@ -1,0 +1,21 @@
+{
+  "matatus": [{
+    "name": "CHEVY",
+    "sacco": "Kayole sacco",
+    "image": "https://media-mpasho.s3.amazonaws.com/wp-content/uploads/2016/02/KAYOLE-MATATU1.jpg?x94009",
+    "plate": "kaw 123a",
+    "route": "Kayole"
+  }, {
+    "name": "The Catalyst",
+    "sacco": "rongai sacco",
+    "image": "http://nairobiwire.com/wp-content/uploads/2015/12/Catalyst-Rongai-1.jpg",
+    "plate": "kaw 123a",
+    "route": "Rongai 125/126"
+  }, {
+    "name": "Ferrari",
+    "sacco": "rongai sacco",
+    "image": "http://nairobiwire.com/wp-content/uploads/2015/09/Most-souped-up-mats-in-Kenya-3.jpg",
+    "plate": "kaw 123a",
+    "route": "ngong 111"
+  }]
+}

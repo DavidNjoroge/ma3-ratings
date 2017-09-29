@@ -13,46 +13,9 @@
     </div>
     <div class="col-md-9">
       <h3>Top Rated Ma3s Today</h3>
-      <div class="each">
-        <div class="row">
-          <div class="col-md-4 img">
-
-            <img src="http://nairobiwire.com/wp-content/uploads/2015/12/Catalyst-Rongai-1.jpg" class="rounded float-left pro" alt="">
-          </div>
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header">
-                <p><strong>THE CATALYST</strong></p>
-              </div>
-              <div class="card-body">
-                <p>Rongai: 126</p>
-                <p>Average rating: 9.4</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="each">
-        <div class="row">
-          <div class="col-md-4 img">
-
-            <img src="http://nairobiwire.com/wp-content/uploads/2015/12/Catalyst-Rongai-1.jpg" class="rounded float-left pro" alt="">
-          </div>
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header">
-                <p><strong>THE CATALYST</strong></p>
-              </div>
-              <div class="card-body">
-                <p>Rongai: 126</p>
-                <p>Average rating: 9.4</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {{#each model as |matatu|}}
+        {{matatu-tile matatu=matatu}}
+      {{/each}}
     </div>
   </div>
 </div>
