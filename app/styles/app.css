@@ -49,6 +49,7 @@ h3 {
 
 .content {
   background-color: pink;
+  padding: 25px;
 }
 
 .comments {
@@ -59,4 +60,8 @@ h3 {
 
 .btn {
   margin: 10px;
+}
+
+.big {
+  height: 250px;
 }

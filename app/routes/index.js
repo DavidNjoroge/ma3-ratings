@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('matatu')
+    return Ember.RSVP.hash({
+      matatus: this.store.findAll('matatu'),
+      comments: this.store.findAll('comment')
+    })
   }
 });
