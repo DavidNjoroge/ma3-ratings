@@ -17,7 +17,7 @@ export default Ember.Component.extend({
       }
       console.log(params);
       this.set('addComment', true)
-      this.sendAction('saveComment', params)
+      this.sendAction('saveComment2', params)
     }
   }
 });
