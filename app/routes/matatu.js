@@ -4,6 +4,12 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('matatu', params.matatu_id)
   },
+  // average: Ember.computed('matatu.comments', function() {
+  //   console.log(this.get('matatu.comments'));
+  // }),
+  sortBy: ['rating:desc'],
+
+  sortedComments: Ember.computed.sort("matatu.comments", 'sortBy'),
   actions: {
     saveComment(params) {
 
@@ -11,7 +17,7 @@ export default Ember.Route.extend({
       var newComment = this.store.createRecord('comment', params)
       var matatu = params.matatu;
       matatu.get('comments').addObject(newComment).then(function() {
-        console.log(matatu);
+
         return newComment.save()
       })
       this.transitionTo('matatu', matatu)

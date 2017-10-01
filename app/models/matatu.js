@@ -8,6 +8,7 @@ export default DS.Model.extend({
   route: DS.attr(),
   comments: DS.hasMany('comment', {
     async: true
-  })
+  }),
+  avRating: DS.attr()
 
 });
