@@ -13,11 +13,13 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         rating: this.get('rating'),
-        content: this.get('content')
+        content: this.get('content'),
+        matatu: this.get('matatu'),
       }
       console.log(params);
       this.set('addComment', false)
-      this.sendAction('saveComment2', params)
+      this.sendAction('saveComment', params)
     }
+
   }
 });

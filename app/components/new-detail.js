@@ -5,13 +5,14 @@ export default Ember.Component.extend({
     saveMatatu() {
       var params = {
         name: this.get('name'),
-        sacco: this.get('sacco'),
         image: this.get('image'),
-        plate: this.get('plate'),
+        sacco: this.get('sacco'),
         route: this.get('route'),
+        plate: this.get('plate'),
+
       };
       console.log(params);
-      // this.sendAction('saveRental2', params);
+      this.sendAction('saveMatatu', params);
     }
   }
 });

@@ -15,12 +15,11 @@
 </div>
 
 <div class="container">
-{{new-comment saveComment2='saveComment3'}}
+{{new-comment saveComment='saveComment' matatu=model}}
 
+{{#each model.comments as |comment|}}
+{{comment-tile comment=comment}}
 
+{{/each}}
 
-  <div class="comments">
-    <p>nice ride and comfortable <span>Rating: 10</span></p>
-    <p>Author: david mwangi</p>
-  </div>
 </div>
