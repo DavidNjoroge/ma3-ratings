@@ -21,6 +21,14 @@ export default Ember.Route.extend({
         return newComment.save()
       })
       this.transitionTo('matatu', matatu)
+    },
+    deleteMatatu(matatu) {
+      console.log(matatu);
+      if (confirm('you are about to delete the matatu are you sure')) {
+        matatu.destroyRecord()
+        this.transitionTo('index')
+
+      }
     }
   }
 });
